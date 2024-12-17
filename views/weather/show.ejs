@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather of <%= data.name %></title>
+  </head>
+  <body>
+    <h1>Weather forecast for <%= data.name %></h1>
+    <div>
+      <div>
+        <h3>City:</h3>
+        <p><%= data.name %></p>
+      </div>
+      <div>
+        <h3>Current Temp:</h3>
+        <p><%= data.main.temp %>°F</p>
+      </div>
+      <div>
+        <h3>Current Weather Description:</h3>
+        <p><%= data.weather[0].description %></p>
+      </div>
+    </div>
+    <a href="/">Back to home</a>
+  </body>
+</html>

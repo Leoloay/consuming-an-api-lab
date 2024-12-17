@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Weather App</h1>
+    <p>
+      Fill the following form to get the latest updates about the Weather on the
+      location you want to stay on the forecast
+    </p>
+    <form action="/weather" method="post">
+      <label for="zipCode">Enter your Zip-Code:</label>
+      <input type="number" name="zipCode" id="zipCode" />
+      <button type="submit">Submit Zip-Code</button>
+    </form>
+  </body>
+</html>
